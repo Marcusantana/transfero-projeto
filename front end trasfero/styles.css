@@ -1,0 +1,46 @@
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    background-color: #44131c;
+    box-shadow: 0 0px 10px 2px black;
+}
+
+header .logo{
+    width: 80px;
+    margin-left: 10px;
+}
+header ul{
+    display: flex;
+    text-align: center;
+    position: 0;
+}
+header a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    color: #fff;
+    transition: all .050s ease;  
+}
+header .contato{
+    background-color: #ffffff;
+    color: #44131c;
+    border-radius: 15% 35%;
+    padding: 9px;
+}
+header a:hover{
+    transition: 0.5s;
+    color: #eb7d7d;
+}
+header .contato:hover{
+    color: #ffffff;
+    background-color: transparent;
+}
+main{
+    background-color: #eb7d7d;
+}
