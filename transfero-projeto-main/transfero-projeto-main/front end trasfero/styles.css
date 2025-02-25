@@ -1,0 +1,147 @@
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    background-color: #44131c;
+    box-shadow: 10px 0px 20px 8px black;
+}
+
+header .logo{
+    width: 80px;
+    margin-left:40px;
+}
+header ul{
+    display: flex;
+    text-align: center;
+    position: 0;
+    margin-right: 100px;
+}
+header a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 650;
+    padding: 20px;
+    color: #fff;
+    transition: background all .050s ;
+}
+header .contato{
+    background-color: #ffffff;
+    color: #44131c;
+    border-radius: 9px 23px;
+    padding: 9.5px 18px 9.5px 18px;
+}
+header a:hover{
+    transition: background ease-in-out 0.5s;
+    color: #eb7d7d;
+}
+header .contato:hover{
+    color: #ffffff;
+    background-color: transparent;
+    border: solid 2px #fff;
+}
+section{
+    display: flex;
+    height: 700px;
+    background: #a12222;
+}
+section h1{
+    font-size: 60px;
+    width: 1600px;
+    display: inline;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 70px;
+}
+
+section p{
+    margin-top:100px;
+    font-size: 22px;
+    text-align: justify;
+    margin-right: 100px;
+    color: #ffffff;
+    font-weight: 400;
+}
+section button{
+    padding: 20px;
+    background-color: #fff;
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-top:50px;
+    font-family: "Jost", serif;
+}
+
+
+section button:hover{
+    background-color: #44131c;
+    color: #fff;
+    transition: background 0.50s;
+    border: solid 2px #fff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 90px;
+    margin-right: 90px;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+    width: 400px;
+    height: 500px;
+    margin-bottom: 1000px;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
