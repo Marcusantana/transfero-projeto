@@ -1,5 +1,6 @@
 header{
     width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,16 +48,19 @@ header .contato:hover{
     height: 700px;
     background: #fff;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 10px 0px 20px 10px #270202;
+    box-shadow: 10px 4px 22px  #850a0a41;
+    background-image: url(images/fundo_definitivo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: center center;
 }
 .carousel h1{
     font-size: 60px;
     width: 1600px;
     display: inline;
     font-weight: 700;
-    color: #44131c;
+    color: #c50d00;
     padding: 70px;
-    /* background-image: url(images/teste_9magem.jpg); */
 }
 
 .carousel p{
@@ -64,19 +68,19 @@ header .contato:hover{
     font-size: 22px;
     text-align: justify;
     margin-right: 100px;
-    color: #a12222;
-    font-weight: 400;
+    color: #ffffff;
+    font-weight: 500;
 }
 .carousel button{
-    padding: 20px;
-    background-color: #a12222;
-    color: #000000;
-    font-weight: 500;
-    font-size: 20px;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    color: #44131c;
+    font-weight: 600;
+    font-size: 26px;
     border-radius: 50px;
-    margin-top:80px;
+    margin-top:100px;
     font-family: "Jost", serif;
-    border: solid 2px #000000;
+    border: solid 3px #a12222;
 }
 
 
@@ -84,7 +88,7 @@ header .contato:hover{
     background-color: #44131c;
     color: #fff;
     transition: background 0.70s;
-    border: solid 2px #000000;
+    border: solid 3px #ffffff;
 }
 
 html, body {
@@ -124,7 +128,7 @@ html, body {
     position: relative;
     width: 100vw;
     height: 300px;
-    margin-top: 90px;
+    margin-top: 40px;
     margin-right: 90px;
 
   }
@@ -136,9 +140,8 @@ html, body {
     animation: display 10s infinite;
     width: 210px;
     height: 600px;
-    margin-bottom: 1000px;
-    margin-left: 80px;
   }
+
   
   img:nth-child(2) {
     animation-delay: 2s;
@@ -155,22 +158,37 @@ html, body {
   .info{
     width: 100%;
   }
-  .info h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 32px;
-    margin: 40px;
-    color: #44131c;
-  }
-
+ 
  .info .info__cards{
   display: flex;
   text-align: center;
   padding: 70px;
+  margin-top: 70px;
  }
 
  .info article{
-  border: solid 2px #270202;
-  padding: 10px;
+  border: solid 3.5px #270202;
+  box-shadow: 2px 2px 12px #3a0101ab;
   border-radius: 20px;
+  margin: 15px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
  }
+.info article i{
+  font-size: 70px;
+  color: #a12222;
+}
+.info article h3{
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #44131c;
+}
+
+.info article p{
+  font-size: 22px;
+  font-weight: 400;
+}
+
