@@ -1,46 +1,176 @@
 header{
-    position: fixed;
     width: 100%;
-    top:0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: transparent;
     background-color: #44131c;
-    box-shadow: 0 0px 10px 2px black;
+    box-shadow: 10px 0px 20px 8px #44131c;
 }
 
 header .logo{
     width: 80px;
-    margin-left: 10px;
+    margin-left:40px;
 }
 header ul{
     display: flex;
     text-align: center;
     position: 0;
+    margin-right: 100px;
 }
 header a{
     text-decoration: none;
     font-size: 18px;
-    font-weight: 600;
-    padding: 10px;
+    font-weight: 650;
+    padding: 20px;
     color: #fff;
-    transition: all .050s ease;  
+    transition: background all .050s ;
 }
 header .contato{
     background-color: #ffffff;
     color: #44131c;
-    border-radius: 15% 35%;
-    padding: 9px;
+    border-radius: 9px 25px;
+    padding: 8.5px 17px 8.5px 17px;
+    border: solid 2px #fff;
 }
 header a:hover{
-    transition: 0.5s;
+    transition: 0.7s;
     color: #eb7d7d;
 }
 header .contato:hover{
     color: #ffffff;
     background-color: transparent;
+    border: solid 2px #fff;
 }
-main{
-    background-color: #eb7d7d;
+.carousel{
+    display: flex;
+    height: 700px;
+    background: #fff;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 10px 0px 20px 10px #270202;
 }
+.carousel h1{
+    font-size: 60px;
+    width: 1600px;
+    display: inline;
+    font-weight: 700;
+    color: #44131c;
+    padding: 70px;
+    /* background-image: url(images/teste_9magem.jpg); */
+}
+
+.carousel p{
+    margin-top:90px;
+    font-size: 22px;
+    text-align: justify;
+    margin-right: 100px;
+    color: #a12222;
+    font-weight: 400;
+}
+.carousel button{
+    padding: 20px;
+    background-color: #a12222;
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-top:80px;
+    font-family: "Jost", serif;
+    border: solid 2px #000000;
+}
+
+
+.carousel button:hover{
+    background-color: #44131c;
+    color: #fff;
+    transition: background 0.70s;
+    border: solid 2px #000000;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 90px;
+    margin-right: 90px;
+
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+    width: 210px;
+    height: 600px;
+    margin-bottom: 1000px;
+    margin-left: 80px;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
+  .info{
+    width: 100%;
+  }
+  .info h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 40px;
+    color: #44131c;
+  }
+
+ .info .info__cards{
+  display: flex;
+  text-align: center;
+  padding: 70px;
+ }
+
+ .info article{
+  border: solid 2px #270202;
+  padding: 10px;
+  border-radius: 20px;
+ }
