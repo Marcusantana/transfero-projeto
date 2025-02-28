@@ -12,6 +12,8 @@ header{
 header .logo{
     width: 80px;
     margin-left:40px;
+    text-decoration: none;
+    padding: 10px
 }
 header ul{
     display: flex;
@@ -19,7 +21,7 @@ header ul{
     position: 0;
     margin-right: 100px;
 }
-header a{
+header ul li a{
     text-decoration: none;
     font-size: 18px;
     font-weight: 650;
@@ -28,7 +30,7 @@ header a{
     color: #fff;
     transition: background all .050s ;
 }
-header a:hover{
+header ul li a:hover{
   border-radius: 9px 25px;
   transition: 0.7s;
   background-color: #270202;
@@ -53,7 +55,7 @@ header .contato:hover{
     height: 700px;
     background: #fff;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 10px 4px 22px  #850a0a41;
+    box-shadow: 10px 4px 22px  #2020208e;
     background-image: url(images/fundo_definitivo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,6 +273,7 @@ padding: 20px 40px;
   height: 720px;
   color: #eee;
   position: relative;
+  box-shadow: 10px 0px 20px 8px #2020208e;
 }
 .slider .list{
   width: 100%;
@@ -327,7 +330,7 @@ padding: 20px 40px;
   font-size: 96px;
   font-weight: 700;
   text-transform: uppercase ;
- line-height: 100px;
+  line-height: 100px;
 }
 
 .slider .list .item .informs .categoria{
@@ -338,14 +341,16 @@ padding: 20px 40px;
 }
 .slider .list .item .informs a{
   display: inline-flex;
+  font-size: 18px;
+  margin-top: 10px;
   gap: 20px;
   text-decoration: none;
-  color: #eee;
+  color: #eeeeee;
   font-weight: 500;
 }
 
 .slider .list .item .informs a:hover{
-  color: #44131c;
+  color: #797979;
   transition: 0.5s;
 }
 .slider .list .item{
@@ -518,4 +523,124 @@ padding: 20px 40px;
   transition: 0.9s ease-in-out;
   font-size: 25px;
   padding: 8px;
+}
+footer{
+  background-color: #44131c;
+  width: 100%;
+  margin-top: 100px;
+  box-shadow: 10px 0px 20px 8px #44131c;
+}
+footer .footer_inicial{
+  display: flex;
+  padding: 10px;
+}
+footer .footer_inicial img{
+  width: 70px;
+  height: 70px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+footer .footer_inicial h1{
+  color: #eeeeee8e;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  margin-top: 33px;
+  margin-left: 5px;
+  font-family: "Squada One", serif;
+}
+footer .footer_inicial .social__footer{
+  margin-left: 840px;
+  margin-top: 30px;
+}
+footer .footer_inicial a{
+  text-decoration: none;
+  color: #eeeeee8e;
+  border-radius: 40px ;
+  margin: 6px;
+  padding: 8px;
+  font-size: 22px;
+  transition: 0.62s ease-in-out;
+}
+footer .footer_inicial .facebook:hover{
+  background-color: #4267b3;
+  color: #fff;
+  border: #fff solid 1px;
+  border-radius: 10px;
+  transition: 0.62s ease-in-out;
+}
+footer .footer_inicial .twitter:hover{
+  background-color: #000000;
+  color: #fff;
+  border: #fff solid 1px;
+  border-radius: 10px;
+  transition: 0.62s ease-in-out;
+}
+footer .footer_inicial .linkedin:hover{
+  background-color: #0a66c2;
+  color: #fff;
+  border: #fff solid 1px;
+  border-radius: 10px;
+  transition: 0.62s ease-in-out;
+}
+
+footer .footer_inicial .instagram {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #eeeeee8e;
+  border-radius: 40px; /* Arredondamento inicial de 40px */
+  padding: 12px 8px;
+  text-align: center;
+  overflow: hidden;
+  transition: border-radius 0.62s ease-in-out, color 0.62s ease-in-out;
+  z-index: 1;
+  border: 1px solid transparent; /* Adiciona uma borda transparente inicial */
+}
+
+footer .footer_inicial .instagram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+  opacity: 0;
+  transition: opacity 0.62s ease-in-out;
+  z-index: -1;
+  border-radius: 40px; /* Garante que o gradiente tenha o mesmo raio de borda inicial */
+}
+
+footer .footer_inicial .instagram:hover {
+  border-radius: 10px; /* Arredondamento de 10px no hover */
+  color: #ffffff; /* Muda a cor do texto no hover */
+  border: 1px solid #fff; /* Adiciona a borda branca de 1px no hover */
+}
+
+footer .footer_inicial .instagram:hover::before {
+  opacity: 1;
+  border-radius: 10px; /* Garante que o gradiente tenha o mesmo raio de borda no hover */
+  transition: 0.62s ease-in-out;
+}
+
+/* Garante que o ícone fique visível sobre o gradiente */
+footer .footer_inicial .instagram i {
+  position: relative;
+  z-index: 1;
+  color: #eeeeee8e;
+  transition: color 0.62s ease-in-out; /* Adiciona transição para a cor do ícone */
+}
+
+footer .footer_inicial .instagram i:hover {
+  color: #ffffff;
+}
+
+footer .footer_inicial .youtube:hover{
+  background-color: #d60000;
+  color: #fff;
+  border: #fff solid 1px;
+  border-radius: 10px;
+  transition: 0.62s ease-in-out;
 }
