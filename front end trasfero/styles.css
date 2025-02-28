@@ -11,7 +11,7 @@ header{
 
 header .logo{
     width: 80px;
-    margin-left:40px;
+    margin-left:75px;
     text-decoration: none;
     padding: 10px
 }
@@ -204,14 +204,14 @@ html, body {
 .sobre_nos{
   background-color: #270202;
   width: 100%;
-  box-shadow: 10px 0px 20px 8px #44131c;
-  margin-bottom: 150px;
-  border-radius: 0px 0px 50px;
+  box-shadow: 10px 0px 20px 8px #2020208e;
+  margin-bottom: 170px;
+  border-radius: 20px;
 
 }
 .sobre_nos h2{
   text-align: center;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   padding-top: 85px;
   color: #fff;
@@ -236,13 +236,12 @@ html, body {
 .sobre_nos .main_content img{
   border-radius: 50px;
   margin-right: 100px;
-  margin-top: 50px;
   height: 470px;
   border:solid 3.5px #000000;
   box-shadow: 2px 2px 12px #5a5a5a86;
 }
 .sobre_nos .main_content span{
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
 }
 .sobre_nos .main_content p{
@@ -250,10 +249,10 @@ html, body {
   font-size: 21px;
 }
 .sobre_nos .main_content button{
-padding: 20px 40px;
+  padding: 20px 60px;
   background-color: #ffffff;
   color: #44131c;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 22px;
   border-radius: 50px;
   margin-top: 50px;
@@ -455,13 +454,14 @@ padding: 20px 40px;
 }
 .funcionarios{
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+  margin-top: 130px;
 }
 .funcionarios h2{
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  color: #44131c;
+  color: #a12222;
 }
 .funcionarios h2 span{
   color: #000;
@@ -470,10 +470,11 @@ padding: 20px 40px;
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  padding: 20px;
+  padding: 10px;
 }
 .funcionarios .funcionarios__cards article{
-  padding: 70px;
+  padding: 40px;
+  padding-right: 70px;
   width: 190px;
   border-left: solid 2px #969696;
   border-right: solid 2px #969696;
@@ -483,7 +484,7 @@ padding: 20px 40px;
   border:#000000 5px solid;
   border-radius: 100%;
   width: 150px;
-  margin-left: 17px;
+  margin-left: 24px;
   margin-bottom: 16px;
 }
 .funcionarios .funcionarios__cards article h4{
@@ -493,15 +494,19 @@ padding: 20px 40px;
   font-weight: 700;
   color: #000;
   padding-top: 23px;
+  padding-left: 5px;
   white-space: nowrap;
   text-decoration: none;
 }
 .funcionarios .funcionarios__cards article .nome{
   text-align: center;
+
+  
   font-size: 24px;
   font-weight: 700;
   color: #000;
   padding-top: 10px;
+  padding-left: 18px;
   white-space: nowrap;
   text-decoration: underline #860303 2px;
   text-underline-offset: 3px;
@@ -513,6 +518,11 @@ padding: 20px 40px;
   border-radius: 10px;
   font-size: 25px;
   padding: 8px;
+  
+}
+
+.funcionarios .funcionarios__cards article .social__media{
+  margin-left: 7.2px;
 }
 
 .funcionarios .funcionarios__cards article a:hover{
@@ -528,7 +538,7 @@ footer{
   background-color: #44131c;
   width: 100%;
   margin-top: 100px;
-  box-shadow: 10px 0px 20px 8px #44131c;
+  box-shadow: 10px 0px 20px 8px #2020208e;
 }
 footer .footer_inicial{
   display: flex;
@@ -537,25 +547,25 @@ footer .footer_inicial{
 footer .footer_inicial img{
   width: 70px;
   height: 70px;
-  margin-left: 60px;
+  margin-left: 120px;
   margin-top: 20px;
 }
 footer .footer_inicial h1{
-  color: #eeeeee8e;
+  color: #eeeeeed7;
   font-size: 50px;
   font-weight: 100;
   letter-spacing: 4px;
   margin-top: 33px;
-  margin-left: 5px;
+  margin-left: 15px;
   font-family: "Squada One", serif;
 }
 footer .footer_inicial .social__footer{
-  margin-left: 840px;
+  margin-left: 1100px;
   margin-top: 30px;
 }
 footer .footer_inicial a{
   text-decoration: none;
-  color: #eeeeee8e;
+  color: #eeeeeed7;
   border-radius: 40px ;
   margin: 6px;
   padding: 8px;
@@ -589,14 +599,14 @@ footer .footer_inicial .instagram {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #eeeeee8e;
-  border-radius: 40px; /* Arredondamento inicial de 40px */
+  color: #eeeeeec4;
+  border-radius: 40px; 
   padding: 12px 8px;
   text-align: center;
   overflow: hidden;
   transition: border-radius 0.62s ease-in-out, color 0.62s ease-in-out;
   z-index: 1;
-  border: 1px solid transparent; /* Adiciona uma borda transparente inicial */
+  border: 1px solid transparent; 
 }
 
 footer .footer_inicial .instagram::before {
@@ -610,27 +620,27 @@ footer .footer_inicial .instagram::before {
   opacity: 0;
   transition: opacity 0.62s ease-in-out;
   z-index: -1;
-  border-radius: 40px; /* Garante que o gradiente tenha o mesmo raio de borda inicial */
+  border-radius: 40px; 
 }
 
 footer .footer_inicial .instagram:hover {
-  border-radius: 10px; /* Arredondamento de 10px no hover */
-  color: #ffffff; /* Muda a cor do texto no hover */
-  border: 1px solid #fff; /* Adiciona a borda branca de 1px no hover */
+  border-radius: 10px; 
+  color: #ffffff; 
+  border: 1px solid #fff; 
 }
 
 footer .footer_inicial .instagram:hover::before {
   opacity: 1;
-  border-radius: 10px; /* Garante que o gradiente tenha o mesmo raio de borda no hover */
+  border-radius: 10px; 
   transition: 0.62s ease-in-out;
 }
 
-/* Garante que o ícone fique visível sobre o gradiente */
+
 footer .footer_inicial .instagram i {
   position: relative;
   z-index: 1;
-  color: #eeeeee8e;
-  transition: color 0.62s ease-in-out; /* Adiciona transição para a cor do ícone */
+  color: #eeeeeed7;
+  transition: color 0.62s ease-in-out; 
 }
 
 footer .footer_inicial .instagram i:hover {
@@ -643,4 +653,76 @@ footer .footer_inicial .youtube:hover{
   border: #fff solid 1px;
   border-radius: 10px;
   transition: 0.62s ease-in-out;
+}
+footer hr{
+  height: 2px;
+  border: none;
+  background-color: #eeeeee41;
+}
+footer .footer_body{
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 60px;
+  padding-bottom: 75px;
+}
+footer .footer_body .footer__links{
+  padding: 60px;
+}
+footer .footer_body h1{
+  font-size: 22px;
+  color: #eeeeeed7;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  margin-bottom: 18px;
+}
+footer .footer_body h1 span{
+  text-decoration: underline;
+}
+footer .footer_body a p{
+  text-decoration: none;
+  font-size: 17px;
+  color: #eeeeeea4;
+  border-radius: 25px 9px;
+  padding: 12px;
+}
+footer .footer_body a p:hover{
+  color: #fff;
+  transition: 0.7s ease-in-out;
+  text-decoration: underline;
+}
+footer .footer_body .footer__links .novidades{
+  margin-left: 50px;
+}
+footer .footer_body .footer__links .novidades input{
+  padding: 10px;
+  color: #eeeeeea4;
+  background-color: #44131c;
+  border: 2.5px solid #eeeeeea4;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: "Jost", serif;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+#email::-webkit-input-placeholder{
+  color: #eeeeeea4;
+}
+footer .footer_body .footer__links .novidades button{
+  background-color: #eeeeeed7;
+  color: #44131c;
+  padding: 7px;
+  font-weight: 700;
+  border: 2px solid #868686;
+  border-radius: 6px;
+  font-size: 22px;
+  font-family: "Jost", serif;
+  width: 325px;
+}
+footer .footer_body .footer__links .novidades button:hover{
+  background-color: #942c3f;
+  color: #fff;
+  transition: 0.7s ease-in-out;
 }
